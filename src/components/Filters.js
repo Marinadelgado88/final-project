@@ -3,10 +3,10 @@ import FilertByGender from "./FilterByGender";
 import FilterByCities from "./FilterByCities";
 const Filters = (props) => {
   return (
-    <section>
-      <form action="">
-        <FilterByName />
-        <FilertByGender />
+    <section className='main'>
+      <form className='main__form' action="">
+        <FilterByName  handleFilter={props.handleFilter}/>
+        <FilertByGender  handleFilter={props.handleFilter} />
         <FilterByCities />
       </form>
     </section>

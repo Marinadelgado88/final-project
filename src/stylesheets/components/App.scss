@@ -1,0 +1,11 @@
+@import "../core/variables";
+* {
+  background-color: $color-base;
+  font-family: 'Heebo';
+}
+.tittle {
+  font-family: "Heebo", sans-serif;
+  flex-direction: column;
+  text-align: center;
+  color: $color-title;
+}

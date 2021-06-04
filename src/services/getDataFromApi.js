@@ -7,9 +7,11 @@ const getInfoFromApi = () => {
           id: user.login.uuid,
           username: user.login.username,
           city: user.location.city,
+          country: user.location.country,
           name: user.name.first,
           lastname: user.name.last,
-          email: user.gender,
+          email: user.email,
+          gender:user.gender,
           image: user.picture.large,
         };
       });

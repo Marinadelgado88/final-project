@@ -1,0 +1,52 @@
+@import "../core/variables";
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #f4b8b7;
+      height: auto;
+      justify-content: center;
+      border-radius: 10px;
+      margin: 50px 0px 50px 0px;
+      padding: 10px;
+      border: 7px solid #548986;
+      width: 90%;
+      position: relative;
+      color: black;
+      @media all and (min-width: 768px) {
+        flex-direction: row;
+        margin: 0px 0px 50px 0px;
+      }
+  
+      &-label {
+        font-size: 20px;
+        text-align: center;
+        font-family: 'Heebo';
+      }
+      &-input {
+        
+        height: 30px;
+        margin: 10px;
+        padding: 0px 5px;
+        border: 2px dotted #028b7b;
+        color: #028b7b;
+        background-color: $color-title;
+      }
+      &-clean {
+        background-color: transparent;
+        border: none;
+        font-size: 20px;
+        text-align: center;
+        color: black;
+        outline: none;
+        transition: ease all 1s;
+        font-weight: bold;
+        margin-left: 20px;
+      }
+    }
+  }
+  
