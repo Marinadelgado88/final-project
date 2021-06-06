@@ -23,13 +23,10 @@ const App = () => {
       setGender(inputChange.value);
     }
   };
-  const filterUsers = users.filter(user => {return user.name.toUpperCase().includes(name.toUpperCase())}).filter(user=>{
-if (gender=== 'all'){
-return true;
-  }
-  else{
-    return user.gender === gender;
-  }
+  const filterUsers = users.filter(user => {return user.name.toUpperCase().includes(name.toUpperCase())}).filter(user=>{ 
+
+    return gender === 'all'? true: user.gender === gender
+
   });
   return (
     <>
