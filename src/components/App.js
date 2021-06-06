@@ -23,7 +23,14 @@ const App = () => {
       setGender(inputChange.value);
     }
   };
-  const filterUsers = users.filter(user => {return user.name.toUpperCase().includes(name.toUpperCase())});
+  const filterUsers = users.filter(user => {return user.name.toUpperCase().includes(name.toUpperCase())}).filter(user=>{
+if (gender=== 'all'){
+return true;
+  }
+  else{
+    return user.gender === gender;
+  }
+  });
   return (
     <>
       <h1 className="tittle">Directorio de personas</h1>
