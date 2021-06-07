@@ -5,22 +5,19 @@
     align-items: center;
     &__form {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
       background-color: #f4b8b7;
       height: auto;
       justify-content: center;
       border-radius: 10px;
-      margin: 50px 0px 50px 0px;
+      margin: 150px 0px 50px 0px;
       padding: 10px;
       border: 7px solid #548986;
       width: 90%;
       position: relative;
       color: black;
-      @media all and (min-width: 768px) {
-        flex-direction: row;
-        margin: 0px 0px 50px 0px;
-      }
+
   
       &-label {
         font-size: 20px;
