@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import Filters from "./Filters";
 import UserList from "./UserList";
 import Footer from "./Footer";
+
 import getDataFromApi from "../services/getDataFromApi";
-import "../stylesheets/components/App.scss";
+
 
 const App = () => {
   const [users, setUsers] = useState([]);
@@ -33,7 +34,6 @@ const App = () => {
   });
   return (
     <>
-      <h1 className="tittle">Directorio de personas</h1>
       <div>
         <Filters handleFilter={handleFilter} />
         <UserList users={filterUsers} />

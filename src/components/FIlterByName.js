@@ -1,4 +1,4 @@
-import "../stylesheets/components/Filters.scss";
+
 const FilterByName = props =>{
   const handleChange =(e)=>{
   props.handleFilter({
