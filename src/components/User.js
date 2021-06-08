@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import '../stylesheets/components/User.scss';
 
 const User = props => {
   const getGender = () => {
@@ -14,13 +15,20 @@ const User = props => {
   };
 
   return (
+    
     <li>
-      <Link to={`/user/${props.user.id}`}>
-        <img className="card__img" src={props.user.image} alt={`Foto de ${props.user.name}`} title={`Foto de ${props.user.name}`} />
-        <h4 className="card__title">{props.user.name}</h4>
+      <Link
+        title='Ir a detalle del usuario'
+        className='main__list-link'
+        to={`/user/${props.user.id}`}
+      >
+        <article className='main__list-article'>
+        <img  className='main__list-articleImg' src={props.user.image} alt={`Foto de ${props.user.name}`} title={`Foto de ${props.user.name}`} />
+        <h4 className='main__list-articleName'>{props.user.name}</h4>
         <p className="card__description">
           {props.user.city} / {getGender()}
         </p>
+        </article>
       </Link>
       </li>
   );

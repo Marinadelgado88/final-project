@@ -65,9 +65,7 @@ const App = () => {
   return (
     <>
       <Header />
-      <main className="main"></main>
-      <h1 className="title--big">Directorio de personas</h1>
-      <div className="col2">
+  
         <Switch>
           <Route path="/user/:id" render={renderDetail} />
           <Route exact path='/'>
@@ -76,7 +74,7 @@ const App = () => {
           </Route>
         </Switch>
         <Footer />
-      </div>
+    
     </>
   );
 };

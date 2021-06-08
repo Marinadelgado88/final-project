@@ -8,13 +8,13 @@ const FilterByGender = props =>{
   }
   return (
       <>
-      <label className="form__label display-block" htmlFor="gender">
+      <label className="h1" htmlFor="gender">
       Género:
       </label>
-      <select className="form__input-text" name="gender" id="gender" onChange={handleChange}>
-        <option value="all">Todos</option>
-        <option value="female">Mujer</option>
-        <option value="male">Hombre</option>
+      <select className="p" name="gender" id="gender" onChange={handleChange}>
+        <option className="p" value="all">Todos</option>
+        <option className="p" value="female">Mujer</option>
+        <option className="p" value="male">Hombre</option>
       </select>
    </>
   )

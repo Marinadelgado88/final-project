@@ -10,10 +10,10 @@ const FilterByName = props =>{
   }
   return (
       <>
-      <label className="form__label display-block" htmlFor="name">
+      <label className="h1" htmlFor="name">
         Filtrar por nombre:
       </label>
-      <input className="form__input-text" type="text" name="name" id="name" onChange={handleChange}/>
+      <input className="h1" type="text" name="name" id="name" onChange={handleChange}/>
       </>
   )
 }
