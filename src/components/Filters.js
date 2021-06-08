@@ -1,17 +1,16 @@
-import FilterByName from "./FIlterByName";
-import FilertByGender from "./FilterByGender";
-import FilterByCities from "./FilterByCities";
-import "../stylesheets/components/Filters.scss";
-const Filters = (props) => {
-  return (
-    <section className='main'>
-      <form className='main__form' action="">
-        <FilterByName  handleFilter={props.handleFilter}/>
-        <FilertByGender  handleFilter={props.handleFilter} />
-        <FilterByCities />
-      </form>
-    </section>
-  );
-};
+  
+import FilterByName from './FilterByName';
+import FilterByGender from './FilterByGender';
 
+const Filters = props =>{
+  return (
+    <section>
+    <form>
+      <FilterByName handleFilter = {props.handleFilter}/>
+      <FilterByGender handleFilter = {props.handleFilter}/>
+
+    </form>
+  </section>
+  )
+}
 export default Filters;

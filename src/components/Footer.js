@@ -8,7 +8,7 @@ const Footer = () => {
           href='https://github.com/Marinadelgado88'
           className='footer__github'
           title='GitHub'
-          target='_blank'
+          target='GitHub'
         >
           <i className='fab fa-github footer__github--icon'></i>
         </a>
@@ -16,7 +16,7 @@ const Footer = () => {
           href='https://twitter.com/_MarinaDelgado_'
           className='footer__twitter'
           title='Twitter'
-          target='_blank'
+          target='Twitter'
         >
           <i className='fab fa-twitter footer__twitter--icon'></i>
         </a>
@@ -24,7 +24,7 @@ const Footer = () => {
           href='https://www.linkedin.com/in/marinadelgadoesquinas/'
           className='footer__linkedin'
           title='Linkedin'
-          target='_blank'
+          target='Linkedin'
         >
           <i className='fab fa-linkedin footer__linkedin--icon'></i>
         </a>

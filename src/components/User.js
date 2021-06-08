@@ -1,18 +1,36 @@
-const User = (props) => {
-  return (
-    <>
-      <img src={props.user.image} alt="Foto del usuario" />
-      <h4>
-        {props.user.name}
-      </h4>
-      <h4>
-        {props.user.lastname}
-      </h4>
-      <p>
-        {props.user.city}/{props.user.gender}
-      </p>
-    </>
-  );
-};
+import React from 'react';
+import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
+const User = props => {
+  const getGender = () => {
+    if (props.user.gender === 'female') {
+      return 'Mujer';
+    } else if (props.user.gender === 'male') {
+      return 'Hombre';
+    } else {
+      return 'No binario';
+    }
+  };
+
+  return (
+    <li>
+      <Link to={`/user/${props.user.id}`}>
+        <img className="card__img" src={props.user.image} alt={`Foto de ${props.user.name}`} title={`Foto de ${props.user.name}`} />
+        <h4 className="card__title">{props.user.name}</h4>
+        <p className="card__description">
+          {props.user.city} / {getGender()}
+        </p>
+      </Link>
+      </li>
+  );
+ 
+  
+};
+User.propTypes = {
+  id: PropTypes.number,
+  image: PropTypes.string,
+  name: PropTypes.string,
+  city: PropTypes.string,
+};
 export default User;
