@@ -1,8 +1,8 @@
 .main__list {
   display: grid;
   row-gap: 30px;
-  margin-bottom: 50px;
-  background-color: #f2f2fe;
+  margin: 50px 0 0 50px;
+
   @media all and (min-width: 768px) {
     grid-template-columns: repeat(3, 1fr);
   }
