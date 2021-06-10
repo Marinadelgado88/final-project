@@ -5,7 +5,12 @@ import UserList from "./UserList";
 import UserDetail from "./UserDetail";
 import getDataFromApi from "../services/getDataFromApi";
 import Header from "./Header";
+import Main from "./Main";
 import Footer from "./Footer";
+import '../stylesheets/components/UserDetail.scss';
+import Button from './Button';
+import Reset from './Reset';
+
 console.log(getDataFromApi());
 const App = () => {
   const [users, setUsers] = useState([]);
@@ -62,19 +67,32 @@ const App = () => {
     });
     return <UserDetail user={selectUser} />;
   };
+  const handleBackClick = () => {
+    window.scrollTo(0, 0);
+  };
+  const resetHandler = () => {
+    setName('');
+    setGender('all');
+   
+  };
   return (
     <>
+   
       <Header />
-  
-        <Switch>
-          <Route path="/user/:id" render={renderDetail} />
-          <Route exact path='/'>
+      <Main/>
+      <main>
+      <Switch>
+        <Route path="/user/:id" render={renderDetail} />
+        <Route exact path="/">
+        <Button handleBackClick={handleBackClick} name={name} />
           <Filters handleFilter={handleFilter} cities={getCities()} />
+          <Reset resetHandler={resetHandler} />
           <UserList users={filterUsers} />
-          </Route>
-        </Switch>
-        <Footer />
-    
+        </Route>
+      </Switch>
+     
+      </main>
+      <Footer />
     </>
   );
 };

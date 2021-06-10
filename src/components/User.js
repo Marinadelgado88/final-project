@@ -1,39 +1,42 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
-import '../stylesheets/components/User.scss';
+import React from "react";
+import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
+import "../stylesheets/components/User.scss";
+import '../stylesheets/components/UserDetail.scss';
+import Mujer from '../images/Mujer.png';
+import Hombre from '../images/Hombre.png';
 
-const User = props => {
+const User = (props) => {
   const getGender = () => {
-    if (props.user.gender === 'female') {
-      return 'Mujer';
-    } else if (props.user.gender === 'male') {
-      return 'Hombre';
-    } else {
-      return 'No binario';
-    }
+    if (props.user.gender === "female") {
+      return Mujer;
+    } else if (props.user.gender === "male") {
+      return Hombre;
+    } 
   };
 
   return (
-    
     <li>
       <Link
-        title='Ir a detalle del usuario'
-        className='main__list-link'
+        title="Ir a detalle del usuario"
+        className="main__list-link"
         to={`/user/${props.user.id}`}
       >
-        <article className='main__list-article'>
-        <img  className='main__list-articleImg' src={props.user.image} alt={`Foto de ${props.user.name}`} title={`Foto de ${props.user.name}`} />
-        <h4 className='main__list-articleName'>{props.user.name}</h4>
-        <p className="card__description">
-          {props.user.city} / {getGender()}
-        </p>
+        <article className="main__list-article">
+          <img
+            className="main__list-articleImg"
+            src={props.user.image}
+            alt={`Foto de ${props.user.name}`}
+            title={`Foto de ${props.user.name}`}
+          />
+          <h4 className="main__list-articleName">{props.user.name}</h4>
+          <img className='icons__box--icon' src={getGender()} alt={`${props.user.gender} icon`}> 
+          </img>
+          <p>{props.user.city}</p>
         </article>
       </Link>
-      </li>
+    </li>
   );
- 
-  
 };
 User.propTypes = {
   id: PropTypes.number,

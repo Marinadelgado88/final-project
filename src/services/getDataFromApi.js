@@ -11,8 +11,9 @@ const getInfoFromApi = () => {
           name: user.name.first,
           lastname: user.name.last,
           email: user.email,
-          gender:user.gender,
+          gender: user.gender,
           image: user.picture.large,
+          vip: Math.random()>0.3,
         };
       });
     });

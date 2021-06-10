@@ -1,0 +1,28 @@
+.card-link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+     text-align: center;
+     top: -50px;
+     width: 70px;
+     text-align: center;
+     font-weight: bold;
+     text-decoration: none;
+     transition: 1s ease all;
+     font-size: 13px;
+     border-radius: 20px;
+     background-color: #ff589e;
+     text-transform: uppercase;
+     color: #fff;
+     letter-spacing: 0.25px;
+     -webkit-transition: all 0.3s ease 0s;
+     -moz-transition: all 0.3s ease 0s;
+     -o-transition: all 0.3s ease 0s;
+     transition: all 0.3s ease 0s;
+     margin-top: 20px;
+     &:hover {
+       transform: scale(1.2);
+       background-color: #8261ee;
+     }
+   }
