@@ -1,4 +1,4 @@
-import '../stylesheets/components/UserDetail.scss';
+import '../stylesheets/components/FilterByGender.scss';
 const FilterByGender = (props) => {
   const handleChange = (e) => {
     props.handleFilter({
@@ -8,20 +8,22 @@ const FilterByGender = (props) => {
   };
   return (
     <>
-      <label className="h1" htmlFor="gender">
-        Género:
-      </label>
-      <select className="p" name="gender" id="gender" onChange={handleChange}>
-        <option className="p" value="all">
+       <div class="search__container">
+    <p class="search__title">
+   Selecciona el género
+    </p>
+      <select className="search__input"  onChange={handleChange}>
+        <option className="search__input" value="all">
           Todos
         </option>
-        <option className="p" value="female">
+        <option className="search__input" value="female">
           Mujer
         </option>
-        <option className="p" value="male">
+        <option className="search__input" value="male">
           Hombre
         </option>
       </select>
+      </div>
     </>
   );
 };

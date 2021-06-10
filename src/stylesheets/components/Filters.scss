@@ -8,17 +8,18 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  height: 100vh;
+  height: 70vh;
 }
 
 .welcome-area .header-text {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-55%);
-  text-align: center;
+ text-align: center;
   width: 100%;
-}
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 150px;
 
+}
 .welcome-area .header-text h1 {
   font-weight: 500;
   font-size: 36px;
@@ -30,7 +31,6 @@
 
 .welcome-area .header-text p {
   font-weight: 400;
-  font-size: 15px;
   color: #fff;
   line-height: 28px;
   letter-spacing: 0.25px;

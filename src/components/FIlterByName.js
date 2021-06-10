@@ -1,4 +1,4 @@
-import '../stylesheets/components/UserDetail.scss';
+import '../stylesheets/components/FilterByName.scss';
 const FilterByName = (props) => {
   const handleChange = (e) => {
     props.handleFilter({
@@ -8,16 +8,20 @@ const FilterByName = (props) => {
   };
   return (
     <>
-      <label className="h1" htmlFor="name">
-        Filtrar por nombre:
-      </label>
+    <div class="search__container">
+    <p class="search__title">
+       Busca por nombre 
+    </p>
       <input
-        className="h1"
+        className="search__input"
         type="text"
         name="name"
         id="name"
+        placeholder="Busca aquí"
         onChange={handleChange}
+        
       />
+      </div>
     </>
   );
 };
