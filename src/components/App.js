@@ -5,7 +5,7 @@ import UserList from "./UserList";
 import UserDetail from "./UserDetail";
 import getDataFromApi from "../services/getDataFromApi";
 import Header from "./Header";
-import Main from "./Main";
+
 import Footer from "./Footer";
 import '../stylesheets/components/UserDetail.scss';
 import Button from './Button';
@@ -79,8 +79,7 @@ const App = () => {
     <>
    
       <Header />
-      <Main/>
-      <main>
+      
       <Switch>
         <Route path="/user/:id" render={renderDetail} />
         <Route exact path="/">
@@ -91,7 +90,7 @@ const App = () => {
         </Route>
       </Switch>
      
-      </main>
+      
       <Footer />
     </>
   );

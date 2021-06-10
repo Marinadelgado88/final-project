@@ -6,8 +6,7 @@ const Header = (props) => {
   return (
     <header className="header-area header-sticky">
       <div className="container">
-        <div className="row">
-          <div className="col-12">
+      
             <nav className="main-nav">
               <img src={logo} alt="logo" className="logo"/>
               <ul className="nav">
@@ -28,8 +27,7 @@ const Header = (props) => {
               
             </nav>
           </div>
-        </div>
-      </div>
+       
     </header>
   );
 };

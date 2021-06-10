@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../stylesheets/components/UserDetail.scss";
-import "../stylesheets/components/Main.scss";
 const UserDetail = (props) => {
   return (
     <>  
