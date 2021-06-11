@@ -1,6 +1,5 @@
 import "../stylesheets/components/Header.scss";
 import logo from "../images/logo.png"
-import '../stylesheets/components/UserDetail.scss';
 
 const Header = (props) => {
   return (

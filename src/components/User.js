@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import "../stylesheets/components/User.scss";
-import "../stylesheets/components/UserDetail.scss";
+
 import Mujer from "../images/Mujer.png";
 import Hombre from "../images/Hombre.png";
 

@@ -5,9 +5,7 @@ import UserList from "./UserList";
 import UserDetail from "./UserDetail";
 import getDataFromApi from "../services/getDataFromApi";
 import Header from "./Header";
-
 import Footer from "./Footer";
-import '../stylesheets/components/UserDetail.scss';
 import Button from './Button';
 import Reset from './Reset';
 

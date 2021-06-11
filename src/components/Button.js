@@ -6,7 +6,7 @@ const Button = (props) => {
   };
 
   return (
-    <button onClick={handleBackClick} className='card-link'>
+    <button onClick={handleBackClick} className='button'>
       Inicio de la página
     </button>
   );
