@@ -22,7 +22,7 @@ const User = (props) => {
         className="main__list-link"
         to={`/user/${props.user.id}`}
       >
-        <article className="main__list-article">
+        <article className="main__list-articl">
           <h4 className="main__list-articleName">{props.user.name}</h4>
           <img
             className="main__list-articleImg"

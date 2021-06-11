@@ -1,4 +1,4 @@
-import '../stylesheets/components/Button.scss';
+import '../stylesheets/components/Reset.scss';
 
 const Reset = (props) => {
   const handleOnClick = () => {
@@ -6,9 +6,9 @@ const Reset = (props) => {
   };
 
   return (
-    <button className='card-link' onClick={handleOnClick}>
-      Reset
-    </button>
+    <button className="reset" resetHandler={props.resetHandler} onClick={handleOnClick}>
+    Reset
+  </button>
   );
 };
 

@@ -1,0 +1,30 @@
+.reset{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     text-align: center;
+     width: 5rem;
+     height: 2rem;
+     text-align: center;
+     font-weight: bold;
+     text-decoration: none;
+     transition: 1s ease all;
+     font-size: 13px;
+     border-radius: 20px;
+     background-color: #ff589e;
+     text-transform: uppercase;
+     margin-top: 70px;
+     color: #fff;
+     letter-spacing: 0.25px;
+     -webkit-transition: all 0.3s ease 0s;
+     -moz-transition: all 0.3s ease 0s;
+     -o-transition: all 0.3s ease 0s;
+     transition: all 0.3s ease 0s;
+     @media all and (min-width: 768px) {
+        flex-direction: row;
+      }
+     &:hover {
+       transform: scale(1.2);
+       background-color: #8261ee;
+     }
+    }

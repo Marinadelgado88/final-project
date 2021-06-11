@@ -42,10 +42,12 @@
 
   &-link {
     display: flex;
+    width: 5rem;
     height: 2rem;
     flex-direction: column;
     justify-content: center;
     font-weight: bold;
+    text-align: center;
     text-decoration: none;
     transition: 1s ease all;
     font-size: 13px;
