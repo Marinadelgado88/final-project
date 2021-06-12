@@ -42,15 +42,15 @@
 
   &-link {
     display: flex;
-    width: 5rem;
     height: 2rem;
+    width: 5rem;
     flex-direction: column;
     justify-content: center;
     font-weight: bold;
-    text-align: center;
     text-decoration: none;
     transition: 1s ease all;
     font-size: 13px;
+    text-align: center;
     margin-top: 200px;
     border-radius: 20px;
     background-color: #ff589e;

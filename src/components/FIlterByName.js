@@ -1,4 +1,4 @@
-import "../stylesheets/components/FilterByName.scss";
+import '../stylesheets/components/FilterByName.scss';
 import PropTypes from "prop-types";
 
 const FilterByName = (props) => {
@@ -10,16 +10,19 @@ const FilterByName = (props) => {
   };
   return (
     <>
-      <div class="search__container">
-        <p class="search__title">Busca por nombre</p>
-        <input
-          className="search__input"
-          type="text"
-          name="name"
-          id="name"
-          placeholder="Busca aquí"
-          onChange={handleChange}
-        />
+    <div class="search__container">
+    <p class="search__title">
+       Busca por nombre 
+    </p>
+      <input
+        className="search__input"
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Busca aquí"
+        onChange={handleChange}
+        
+      />
       </div>
     </>
   );

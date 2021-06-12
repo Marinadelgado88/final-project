@@ -6,7 +6,8 @@ import UserDetail from "./UserDetail";
 import getDataFromApi from "../services/getDataFromApi";
 import Header from "./Header";
 import Footer from "./Footer";
-import Button from "./Button";
+import Button from './Button';
+
 
 const App = () => {
   const [users, setUsers] = useState([]);
@@ -33,8 +34,10 @@ const App = () => {
         });
         setCities(newCities);
       }
+      
     }
   };
+  
   const filterUsers = users
     .filter((user) => {
       return user.name.toUpperCase().includes(name.toUpperCase());
@@ -62,31 +65,25 @@ const App = () => {
     return <UserDetail user={selectUser} />;
   };
   const handleBackClick = () => {
-    window.scrollTo(0, 0);
+     window.scroll(0, 0);
   };
   const resetHandler = () => {
-    setName("");
-    setGender("all");
+    setName('');
+    setGender('all');
+   
   };
-  console.log(resetHandler);
   return (
     <>
-      <Header />
-
+      <Header /> 
       <Switch>
         <Route path="/user/:id" render={renderDetail} />
         <Route exact path="/">
-          <Button handleBackClick={handleBackClick} name={name} />
-          <Filters
-            handleFilter={handleFilter}
-            resetHandler={resetHandler}
-            cities={getCities()}
-          />
-
+       
+          <Filters handleFilter={handleFilter} cities={getCities()}    resetHandler={resetHandler} />
           <UserList users={filterUsers} />
+          <Button handleBackClick={handleBackClick} name={name} />
         </Route>
       </Switch>
-
       <Footer />
     </>
   );

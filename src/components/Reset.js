@@ -6,9 +6,9 @@ const Reset = (props) => {
   };
 
   return (
-    <button className="reset" resetHandler={props.resetHandler} onClick={handleOnClick}>
+    <button className="reset" resetHandler={props.resetHandler} onClick={handleOnClick}  name="name">
     Reset
-  </button>
+    </button>
   );
 };
 

@@ -1,13 +1,11 @@
-/*.card-link{
+.button{
     display: flex;
     flex-direction: column;
     justify-content: center;
      text-align: center;
-     width: 70px;
-     text-align: center;
+     width: 110px;
      font-weight: bold;
      text-decoration: none;
-     transition: 1s ease all;
      font-size: 13px;
      border-radius: 20px;
      background-color: #ff589e;
@@ -18,9 +16,20 @@
      -moz-transition: all 0.3s ease 0s;
      -o-transition: all 0.3s ease 0s;
      transition: all 0.3s ease 0s;
-     
+     position: fixed;
+     top: 150px;
+     left: 0px;
+     right: 0px;
+     z-index: 100;
+     @media all and (min-width: 768px) {
+      top: 30px;
+    }
+    @media all and (min-width: 768px) {
+      top: 150px;
+      left: 1100px;
+    }
      &:hover {
        transform: scale(1.2);
        background-color: #8261ee;
      }
-   }*/
+   }
