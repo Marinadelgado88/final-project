@@ -11,7 +11,6 @@ const Filters = (props) => {
       <FilterByName name={props.name} handleFilter={props.handleFilter} />
         <FilterByGender handleFilter={props.handleFilter}  />
         <Reset resetHandler={props.resetHandler} />
-      
       </div>
     </div>
   );

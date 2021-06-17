@@ -4,14 +4,14 @@ import "../stylesheets/components/UserDetail.scss";
 const UserDetail = (props) => {
   return (
     <>
-    <article className="main">
-      <Link className="card-link" title="Volver a resultados" to="/">
-        Volver
-      </Link>
-      
-        <div className="card">
+      <article className="main">
+        <Link className="card-link" title="Volver a resultados" to="/">
+          Volver
+        </Link>
+
+        <div className="card ">
           <img
-            className="card-img-top"
+            className="card-img-top "
             src={props.user.image}
             alt={`Foto de ${props.user.name}`}
           />

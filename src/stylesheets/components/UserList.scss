@@ -21,6 +21,7 @@
     transition: ease 1s all;
     &:hover {
       transform: scale(1.15);
+      filter: opacity(.5);
     }
   }
 }

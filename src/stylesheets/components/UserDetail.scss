@@ -6,9 +6,8 @@
   @media all and (min-width: 768px) {
     flex-direction: row;
   }
- 
-
 }
+
 .card {
   word-wrap: break-word;
   background-clip: border-box;
@@ -23,12 +22,14 @@
   align-content: center;
   justify-items: center;
   background-color: #f2f2fe;
+  &:hover {
+    filter: opacity(0.5);
+  }
   @media all and (min-width: 768px) {
     flex-direction: row;
     margin: 200px 0 140px 20px;
     width: 40rem;
   }
- 
 
   &-body {
     flex: 1 1 auto;
@@ -38,6 +39,10 @@
 
   &-title {
     margin: 2.5rem 0 3rem 0;
+  }
+  &-text {
+    animation: 3s infinite alternate slidein;
+
   }
 
   &-link {
