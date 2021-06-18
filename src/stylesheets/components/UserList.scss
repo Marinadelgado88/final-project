@@ -2,7 +2,7 @@
 .main__list {
   display: grid;
   row-gap: 30px;
-  margin: 50px 0 0 50px;
+  margin: 50px 0 0 0px;
 
   @media all and (min-width: 768px) {
     grid-template-columns: repeat(3, 1fr);

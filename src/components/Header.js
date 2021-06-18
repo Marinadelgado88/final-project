@@ -11,11 +11,9 @@ const Header = (props) => {
               <ul className="nav">
           
                 <li>
-                  <a href="#work-process">Ejercicios</a>
+                  <a href="https://marinadelgado88.github.io/CMV-public/">Ejercicios</a>
                 </li>
-                <li>
-                  <a href="#testimonials">Video</a>
-                </li>
+               
                 <li>
                   <a href="https://www.linkedin.com/in/marinadelgadoesquinas/">
                     Contact Me
